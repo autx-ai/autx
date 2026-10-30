@@ -1,0 +1,227 @@
+# How the AUTX AI Visibility Check works
+
+This page is a copy of [autx.ai/how-it-works](https://autx.ai/how-it-works/) as of 30 October 2026 (question set version 2026-10-29b). The page on autx.ai is the current version.
+
+## What we ask, which models we ask, and how we count
+
+We ask AI models the questions your customers ask and read every answer. This page lists every question and every rule.
+
+## Three results, counted apart
+
+A mention alone can flatter you, because a place in a list of rivals is not a recommendation.
+
+- **Named.** The answer names your business, and something in it ties the name to you.
+- **Recommended.** The answer tells the customer to go to you. This result sends people your way, and it is rarer.
+- **Linked.** Your website shows up in the answer or its sources.
+
+Every count comes with the number of answers behind it, for example recommended in 2 of 13 answers and named in 5 of 13. The gap between named and recommended tends to be the finding.
+
+## Where the answers come from
+
+Models with web search build their answers from the pages they find, so the businesses those pages name tend to show up in the answers. Those pages are often guides, review sites and lists, not a business's own website. The report names the sites the models cited for your type of business and your city, so you know where to get listed and reviewed. The fix kit covers your own website.
+
+## If your name is shared, the numbers lie
+
+We learned this on ourselves. An early run counted our company, AUTX, as visible in a third of answers. The answers described a defunct stock ticker, an autotransformer and a fiber that share the name. Our real visibility was zero.
+
+So we ask each model what your name means, and count a mention only when something in the answer ties the name to your business. Name collisions get their own line and stay out of your numbers.
+
+## What the report does not promise
+
+No ranking change by any date. Answers vary between runs. The report states what the models said and what their sources support, and running the check again later is how you see movement. Anyone who promises a ranking is guessing.
+
+## Models
+
+- Free check: GPT-6 Luna (Azure) with web search on. The first three questions of your set, plus the name check.
+- Full report: Claude, GPT-6.1 Sol (Azure), GPT-6 Luna (Azure), Grok 4.7 (Azure), Gemini 3.8 Flash and Perplexity Sonar, with web search on for every model except Gemini 3.8 Flash. Every question in your set, plus the name check. Each model answers each question once.
+- Without web search: Gemini 3.8 Flash answers from what it learned in training, so it cites no sites and links your website only if it learned the address.
+
+We ask each model through its developer API, with web search on for every model except Google's Gemini. The ChatGPT, Claude, Gemini, Grok and Perplexity apps can answer differently, and AUTX does not measure any app.
+
+## Question sets
+
+Each set holds the questions a customer asks close to choosing a business. Some questions do not name you; the others do. We fill in your type of business, your city (or "your area" when you give none) and your name. Question set version 2026-10-29b.
+
+### Shops, cafés, restaurants, salons, gyms and studios (question set `storefront`)
+
+Questions that do not name you (15):
+
+- What is the best {category} in {location}?
+- Which {category} in {location} would you recommend?
+- What {category} in {location} should I try this weekend?
+- Which {category} in {location} has the best reviews?
+- What is the most popular {category} in {location} right now?
+- Which {category} in {location} do locals love?
+- Which {category} in {location} is the best value for the money?
+- Which {category} in {location} has the best atmosphere?
+- What is a hidden gem {category} in {location}?
+- Which {category} in {location} is worth the hype?
+- Which new {category} in {location} is worth trying?
+- I'm new to {location}. Which {category} should I go to?
+- Which {category} in {location} has the friendliest staff?
+- Which {category} in {location} should I avoid?
+- What are the warning signs of a bad {category}?
+
+Questions about you by name (5):
+
+- Is {brand} a good {category} in {location}?
+- What do people say about {brand}?
+- Are there any complaints about {brand}?
+- Is {brand} worth the price?
+- What is {brand} known for?
+
+### Trades and home services (question set `local`)
+
+Questions that do not name you (15):
+
+- Who are the best {category} companies in {location}?
+- I need {category} in {location}. Who should I call first?
+- What should I look for when hiring a {category} company in {location}?
+- Who are the most trusted {category} providers near {location}?
+- Compare the top {category} companies in {location}.
+- What does {category} typically cost in {location}?
+- Which {category} companies in {location} have the best reviews?
+- Who is the largest {category} provider in {location}?
+- What questions should I ask a {category} contractor before signing?
+- Which {category} companies in {location} offer emergency service?
+- What are the red flags when choosing a {category} company?
+- Who has been doing {category} in {location} the longest?
+- Recommend a {category} company for a small business in {location}.
+- What is the difference between the top {category} providers in {location}?
+- Who should I avoid when hiring for {category} in {location}?
+
+Questions about you by name (5):
+
+- Is {brand} a good choice for {category} in {location}?
+- What do people say about {brand}?
+- Are there any complaints about {brand}?
+- I got a quote from {brand}. Is that a fair price?
+- Is {brand} licensed and insured?
+
+### Professional services (question set `professional`)
+
+Questions that do not name you (15):
+
+- Who are the best {category} firms in {location}?
+- How do I choose a {category} provider?
+- What should {category} services cost?
+- Which {category} firms work with small businesses?
+- Compare the leading {category} providers in {location}.
+- What credentials should a {category} provider have?
+- Who is the most experienced {category} provider in {location}?
+- What questions should I ask before hiring a {category} firm?
+- Which {category} providers offer a free consultation?
+- What are the warning signs of a bad {category} provider?
+- Recommend a {category} firm for a startup.
+- How long does {category} work usually take?
+- Which {category} firms specialize in my industry?
+- Is it better to use a large or boutique {category} firm?
+- Which {category} provider gives the best value?
+
+Questions about you by name (5):
+
+- Is {brand} reputable?
+- What do clients say about {brand}?
+- Are there any complaints about {brand}?
+- What does {brand} specialize in?
+- Who are the alternatives to {brand}?
+
+### Online stores and brands (question set `ecommerce`)
+
+Questions that do not name you (15):
+
+- Where is the best place to buy {category} online?
+- What are the best {category} brands?
+- Which {category} brand has the best quality?
+- What is the best value {category} brand?
+- Compare the top {category} brands.
+- Which {category} brands ship fastest?
+- What are the best-reviewed {category} products this year?
+- Which {category} brand has the best return policy?
+- What is a good alternative to the most popular {category} brand?
+- Which {category} brands are made in the United States?
+- What should I look for when shopping for {category}?
+- Which {category} brand is best for beginners?
+- What is the most recommended {category} brand?
+- Which {category} brands offer a warranty?
+- Which {category} brands do experts recommend?
+
+Questions about you by name (5):
+
+- Is {brand} a legitimate company?
+- What do reviews say about {brand}?
+- Is {brand} worth the price?
+- Are there any complaints about {brand}?
+- Is it safe to order from {brand}?
+
+### Software and apps (question set `saas`)
+
+Questions that do not name you (14):
+
+- What is the best {category} tool?
+- What are the top alternatives to the leading {category} software?
+- Compare the best {category} tools for a small team.
+- What is the cheapest good {category} tool?
+- Which {category} tool is best for a solo founder?
+- What {category} tool should I use if I am just starting out?
+- Which {category} tools have the best free tier?
+- What is the most popular {category} software right now?
+- Which {category} tool integrates best with existing workflows?
+- What are people switching to instead of the market leader in {category}?
+- Which {category} tool has the best support?
+- What should I know before buying a {category} tool?
+- Which {category} tools are built for enterprise versus small business?
+- What is the fastest {category} tool to set up?
+
+Questions about you by name (6):
+
+- Is {brand} worth it?
+- What do users say about {brand}?
+- What are the downsides of {brand}?
+- Is {brand} better than its competitors?
+- Is {brand} still actively maintained?
+- How does {brand} pricing compare to alternatives?
+
+### Name check
+
+Every run also asks:
+
+- What is {brand}?
+
+## How we count an answer
+
+### Matching
+
+We compare names after folding the text: curly and straight apostrophes count as the same, "&" counts as "and", case does not matter, and a name has to match as whole words, so "roof" does not match "roofing". Quotes keep the original text.
+
+### Named
+
+An answer to a question that does not name you must use your name as a name. A name that is not an everyday English word (Saatva, Casper) counts wherever it appears. A name that is an everyday word (Purple, Simple) counts when the answer uses it as a name: with its capital letter inside a sentence; in bold, as a link or alone on its line; as a label ("Purple:"); followed by a possessive, a product name or other brand names; or opening a sentence about it that also gives your city, your website or a word from your type of business outside the name's own phrase. A name of several words counts when it keeps its capital letters. For an online store or software business, the rules above are enough. A business with a city (a shop, café, salon, gym, studio, trade or professional service) also needs its city or website in the answer, or a word from your type of business in a sentence that names you. Questions about you by name and the name check already give your name, so there the answer must tie it to you instead: your website, your city, a word from your type of business in a sentence that names you, or two different words from it anywhere. When your type of business is one word, an answer about you by name may have that word anywhere, when it uses your name as a name. When every word of your name is a word from your type of business (for example, Blank Apparel selling blank apparel), only your website, or your name written closed up as in a web address, counts.
+
+### Recommended
+
+An answer recommends you when it tells the customer to go to you. A word such as "try", "use", "visit", "head to", "consider", "check out" or "go with" has to open a clause and come before your name in the same sentence, and "I recommend", "we suggest" and "your best bet is" count too. We reject the sentence when "instead of", "alternatives to", "rather than", "complaints about" or similar words sit between the verb and your name, or when "not", "never", "avoid" or "don't" comes right before the verb. A recommendation counts only when the same answer also names you under the rule above.
+
+### Linked
+
+An answer links you when your domain, or a subdomain of it, appears in a recommendation link or a cited source. When you give no domain, we leave the linked result out and say so.
+
+### Name collisions
+
+When the model says your name points to more than one thing, and nothing in the answer ties the name to your business, we count a collision and do not count the mention. The name check reports one of: confirmed, collision, mixed, unconfirmed, not named or no answer.
+
+### Headline figures
+
+Recommended, named and linked counts use only the questions that do not name you, so a question that already names you cannot raise your numbers. Questions about you by name and the name check feed the name check section. Every figure leaves out failed calls, and each count comes with the number of answers behind it. Questions that ask what to avoid or what warning signs to look for sit outside every figure, because a mention there is no win. A report quotes each answer to them that names you, in its own section.
+
+### Sites to pursue
+
+We list the sites cited in answers to questions that do not name you (when the answer did not collide with another business) and in answers about you by name that we could tie to you. Answers to the questions about what to avoid add no sites, because a site cited there may be a complaints site. We drop your own site and its subdomains, the sites of competitors you list, and general sites such as wikipedia.org, google.com and youtube.com.
+
+### Complete or incomplete
+
+The free check counts as complete when at least 2 of its 3 answers come back. A full report counts as complete when at least 60% of all its planned calls come back (a call is one question to one model). We then leave out any model that got the questions that do not name you but answered none of them. Of the calls to the other models, at least 90% must also come back, and at least 80% within each of those models and within each kind of question. A call we skip because the run hit its spending cap counts as not answered. When a model gets the questions that do not name you but answers none of them, we run the report once more. If it answers none again, we send the report without it and offer a refund. If a full report is still incomplete after three attempts, we refund your order.
+
+## Noise
+
+Models answer the same question differently from run to run. One run is a sample, not a census, so read a difference of one or two answers between two runs as noise. We publish no ranking promise and no score.
