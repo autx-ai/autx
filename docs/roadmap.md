@@ -1,16 +1,19 @@
 # Roadmap
 
-Updated 30 October 2026.
+Updated 31 October 2026.
 
 ## Live
 
 | Piece | Since |
 |---|---|
-| Free check: three customer questions to GPT-6 Luna on Azure OpenAI, web search on, plus a name check | 28 October 2026 |
+| Free check: three customer questions to GPT-6 Luna on Azure OpenAI, web search on, plus a name check (running since a fix on 31 October) | 28 October 2026 |
 | AUTX AI Visibility Report, $49: a PDF by email; buyers can ask for a refund within 30 days | 28 October 2026 |
 | The site: the check, a sample report, How it works, a guide to getting recommended by AI assistants, About, and x402 services for developers | 29 October 2026 |
 | The report asks six AI models from OpenAI, Anthropic, Google, xAI and Perplexity | 30 October 2026 |
 | Fixes from the independent review: a stricter completeness rule, revenue read from the orders, the phone layout | 30 October 2026 |
+| Privacy policy and terms of service; report data deleted 12 months after payment | 31 October 2026 |
+| An AI visibility grade, A to F with a score out of 100, at the top of the full report | 31 October 2026 |
+| Strength questions: up to three things an owner wants to be known for, asked in the free check and the report | 31 October 2026 |
 
 ## Next, in order
 

@@ -1,6 +1,6 @@
 # How the AUTX AI Visibility Check works
 
-This page is a copy of [autx.ai/how-it-works](https://autx.ai/how-it-works/) as of 30 October 2026 (question set version 2026-10-29b). The page on autx.ai is the current version.
+This page is a copy of [autx.ai/how-it-works](https://autx.ai/how-it-works/) as of 31 October 2026 (question set version 2026-10-31). The page on autx.ai is the current version.
 
 ## What we ask, which models we ask, and how we count
 
@@ -15,6 +15,18 @@ A mention alone can flatter you, because a place in a list of rivals is not a re
 - **Linked.** Your website shows up in the answer or its sources.
 
 Every count comes with the number of answers behind it, for example recommended in 2 of 13 answers and named in 5 of 13. The gap between named and recommended tends to be the finding.
+
+## The grade
+
+Your AI visibility grade: a letter from A to F and a score out of 100. Like a credit score, it sums up a lot of detail in one number. It is a snapshot of the answers on the day we ask. The score weighs the three results: named 50%, recommended 35% and linked 15%. We work out each model's share of its answers to the questions in your set that do not name you, average the models from one company so each company counts once, then average the companies. Gemini 3.8 Flash is asked without web search, so the grade leaves it out, but the report still shows its answers and counts.
+
+A is 80 or more, B is 60 or more, C is 40 or more, D is 20 or more, and F is below 20. When you give no website, the linked part drops out, and named and recommended make up the whole score: 59 percent and 41 percent. A report gets no grade when it is incomplete, or when a model with web search answered none of the questions in your set that do not name you. The free check has no grade, because answers from one model are too few to grade.
+
+## Your strengths
+
+You can list up to three things you want to be known for, such as outdoor seating or vegan pastries. For each one we ask a question that does not name you, such as "Which coffee shop in Austin, TX is best for outdoor seating?" We count named, recommended and linked by the same rules as the other questions. Google says the top restaurant details people ask AI Mode about in follow-up questions include outdoor seating, vegan or vegetarian options, live music and whether dogs are welcome. ([Google, How people are using AI Mode in the U.S.](https://services.google.com/fh/files/blogs/ai_mode_us_insights.pdf), page 24.) We do not test Google AI Mode itself.
+
+Your strengths are your own picks, so their answers get their own section and stay out of the grade and the headline figures. The sites they cite count toward the sites to pursue.
 
 ## Where the answers come from
 
@@ -32,15 +44,15 @@ No ranking change by any date. Answers vary between runs. The report states what
 
 ## Models
 
-- Free check: GPT-6 Luna (Azure) with web search on. The first three questions of your set, plus the name check.
-- Full report: Claude, GPT-6.1 Sol (Azure), GPT-6 Luna (Azure), Grok 4.7 (Azure), Gemini 3.8 Flash and Perplexity Sonar, with web search on for every model except Gemini 3.8 Flash. Every question in your set, plus the name check. Each model answers each question once.
+- Free check: GPT-6 Luna (Azure) with web search on. The first three questions of your set, one question for each strength you list, and the name check.
+- Full report: Claude, GPT-6.1 Sol (Azure), GPT-6 Luna (Azure), Grok 4.7 (Azure), Gemini 3.8 Flash and Perplexity Sonar, with web search on for every model except Gemini 3.8 Flash. Every question in your set, one question for each strength you list, and the name check. Each model answers each question once.
 - Without web search: Gemini 3.8 Flash answers from what it learned in training, so it cites no sites and links your website only if it learned the address.
 
 We ask each model through its developer API, with web search on for every model except Google's Gemini. The ChatGPT, Claude, Gemini, Grok and Perplexity apps can answer differently, and AUTX does not measure any app.
 
 ## Question sets
 
-Each set holds the questions a customer asks close to choosing a business. Some questions do not name you; the others do. We fill in your type of business, your city (or "your area" when you give none) and your name. Question set version 2026-10-29b.
+Each set holds the questions a customer asks close to choosing a business. Some questions do not name you; the others do. We fill in your type of business, your city (or "your area" when you give none), your name and the strengths you list. A strength that starts with "best for" gets the "best for" form (best for remote work). Any other strength that starts with "best" or "the best" gets the "has the best" form (best espresso). Common descriptions such as dog friendly, family owned, open late or vegan get the "is" form. Every other strength gets the "best for" form. Your results show the exact question we asked. Question set version 2026-10-31.
 
 ### Shops, cafés, restaurants, salons, gyms and studios (question set `storefront`)
 
@@ -70,6 +82,12 @@ Questions about you by name (5):
 - Is {brand} worth the price?
 - What is {brand} known for?
 
+One question for each strength you list, in the form that fits it:
+
+- Which {category} in {location} is best for {strength}?
+- Which {category} in {location} is {strength}?
+- Which {category} in {location} has the best {strength}?
+
 ### Trades and home services (question set `local`)
 
 Questions that do not name you (15):
@@ -97,6 +115,12 @@ Questions about you by name (5):
 - Are there any complaints about {brand}?
 - I got a quote from {brand}. Is that a fair price?
 - Is {brand} licensed and insured?
+
+One question for each strength you list, in the form that fits it:
+
+- Which {category} companies in {location} are best for {strength}?
+- Which {category} companies in {location} are {strength}?
+- Which {category} company in {location} has the best {strength}?
 
 ### Professional services (question set `professional`)
 
@@ -126,6 +150,12 @@ Questions about you by name (5):
 - What does {brand} specialize in?
 - Who are the alternatives to {brand}?
 
+One question for each strength you list, in the form that fits it:
+
+- Which {category} firms in {location} are best for {strength}?
+- Which {category} firms in {location} are {strength}?
+- Which {category} firm in {location} has the best {strength}?
+
 ### Online stores and brands (question set `ecommerce`)
 
 Questions that do not name you (15):
@@ -153,6 +183,12 @@ Questions about you by name (5):
 - Is {brand} worth the price?
 - Are there any complaints about {brand}?
 - Is it safe to order from {brand}?
+
+One question for each strength you list, in the form that fits it:
+
+- Which {category} brand is best for {strength}?
+- Which {category} brands are {strength}?
+- Which {category} brand has the best {strength}?
 
 ### Software and apps (question set `saas`)
 
@@ -182,6 +218,12 @@ Questions about you by name (6):
 - Is {brand} still actively maintained?
 - How does {brand} pricing compare to alternatives?
 
+One question for each strength you list, in the form that fits it:
+
+- What is the best {category} tool for {strength}?
+- Which {category} tools are {strength}?
+- Which {category} tool has the best {strength}?
+
 ### Name check
 
 Every run also asks:
@@ -208,20 +250,20 @@ An answer links you when your domain, or a subdomain of it, appears in a recomme
 
 ### Name collisions
 
-When the model says your name points to more than one thing, and nothing in the answer ties the name to your business, we count a collision and do not count the mention. The name check reports one of: confirmed, collision, mixed, unconfirmed, not named or no answer.
+When the model says your name points to more than one thing and the answer does not give your website, we count a collision and do not count the mention. The name check reports one of: confirmed, collision, mixed, unconfirmed, not named or no answer. When some answers count as a collision but more answers describe your business, it reads mixed, not collision.
 
 ### Headline figures
 
-Recommended, named and linked counts use only the questions that do not name you, so a question that already names you cannot raise your numbers. Questions about you by name and the name check feed the name check section. Every figure leaves out failed calls, and each count comes with the number of answers behind it. Questions that ask what to avoid or what warning signs to look for sit outside every figure, because a mention there is no win. A report quotes each answer to them that names you, in its own section.
+Recommended, named and linked counts use only the questions that do not name you, so a question that already names you cannot raise your numbers. Questions about you by name and the name check feed the name check section. Every figure leaves out failed calls, and each count comes with the number of answers behind it. Questions that ask what to avoid or what warning signs to look for sit outside every figure, because a mention there is no win. A report quotes each answer to them that names you, in its own section. Strength questions do not name you either, but they sit outside the headline figures and the grade, in their own section.
 
 ### Sites to pursue
 
-We list the sites cited in answers to questions that do not name you (when the answer did not collide with another business) and in answers about you by name that we could tie to you. Answers to the questions about what to avoid add no sites, because a site cited there may be a complaints site. We drop your own site and its subdomains, the sites of competitors you list, and general sites such as wikipedia.org, google.com and youtube.com.
+We list the sites cited in answers to questions that do not name you, strength questions included. We skip an answer that uses your name without tying it to you, or says the name points to more than one thing. We also list the sites cited in answers about you by name that we could tie to you. Answers to the questions about what to avoid add no sites, because a site cited there may be a complaints site. We drop your own site and its subdomains, the sites of competitors you list, and general sites such as wikipedia.org, google.com and youtube.com.
 
 ### Complete or incomplete
 
-The free check counts as complete when at least 2 of its 3 answers come back. A full report counts as complete when at least 60% of all its planned calls come back (a call is one question to one model). We then leave out any model that got the questions that do not name you but answered none of them. Of the calls to the other models, at least 90% must also come back, and at least 80% within each of those models and within each kind of question. A call we skip because the run hit its spending cap counts as not answered. When a model gets the questions that do not name you but answers none of them, we run the report once more. If it answers none again, we send the report without it and offer a refund. If a full report is still incomplete after three attempts, we refund your order.
+The free check counts as complete when at least 2 of its first three questions get an answer. Strength questions do not count toward this. A full report counts as complete when at least 60% of all its planned calls come back (a call is one question to one model). We then leave out any model that got the questions that do not name you but answered none of them. Of the calls to the other models, at least 90% must also come back, and at least 80% within each of those models and within each kind of question. A call we skip because the run hit its spending cap counts as not answered. When a model gets the questions in your set that do not name you but answers none of them, we run the report once more. If it answers none again, we send the report without it and offer a refund. If a full report is still incomplete after three attempts, we refund your order.
 
 ## Noise
 
-Models answer the same question differently from run to run. One run is a sample, not a census, so read a difference of one or two answers between two runs as noise. We publish no ranking promise and no score.
+Models answer the same question differently from run to run. One run is a sample, not a census, so read a difference of one or two answers between two runs as noise. We make no ranking promise. The score can move a few points between runs, so a grade near the edge of a band can change by a letter.
