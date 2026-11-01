@@ -1,5 +1,12 @@
 # Changelog
 
+## 1 November 2026
+
+- The full report opens with a two-page summary for the owner. Page 1 gives the grade, a one-sentence conclusion, the three measures and the first three things to do. Page 2 gives one row per AI company, the competitors the owner listed and the strength answers. Page 3 holds a checklist of every task. Then come each task's steps and the numbered evidence.
+- Report emails now attach a developer brief, a text file for whoever looks after the website or listings. It lists every task under the same task numbers as the PDF, with full steps for each website task.
+- The buyer's private order page shows a summary of the report and offers the developer brief as a download.
+- The site's own script counts page views and clicks as daily totals, with no cookie and no ID. The [privacy policy](https://autx.ai/privacy/) describes these totals and now also names Cloudflare Web Analytics, which was already running.
+
 ## 31 October 2026
 
 - A [privacy policy](https://autx.ai/privacy/) and [terms of service](https://autx.ai/terms/) went live. AUTX deletes report data 12 months after payment.

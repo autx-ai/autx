@@ -1,4 +1,4 @@
-> **Status: planned, not yet built (30 October 2026).** This design came out of the [independent review](review-2026-10-30.md), and the text below is the reviewer's, kept as written. [How the check works](how-the-check-works.md) describes the report on sale today.
+> **Status: partly built (1 November 2026).** The report on sale since 1 November is built on this design, with two changes the founder chose: it opens with a letter grade, and its three measures are called "Named you", "Recommended you" and "Cited your website". Parts not built yet include a check of the business's own website, holding competitors to the same name rules as the business, separate choices for search and training crawlers, treating llms.txt as optional, and a way to ask for help with the tasks. This design came out of the [independent review](review-2026-10-30.md), and the text below is the reviewer's, kept as written. [How the check works](how-the-check-works.md) describes the method: the questions, the models and the counting rules.
 
 # Owner summary + implementation brief: report vNext
 

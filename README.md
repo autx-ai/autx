@@ -28,7 +28,7 @@ The full method, with every question and every counting rule: [docs/how-the-chec
 |---|---|
 | [How the check works](docs/how-the-check-works.md) | The questions, the models and how we count every answer |
 | [Independent review, 30 October 2026](docs/review-2026-10-30.md) | What an outside review found, and what we fixed |
-| [Report design](docs/report-design.md) | The planned two-part report: an owner summary, then actions backed by evidence |
+| [Report design](docs/report-design.md) | The design behind the two-part report, live since 1 November 2026: an owner summary, then actions backed by evidence |
 | [Roadmap](docs/roadmap.md) | What is live and what comes next |
 | [Changelog](CHANGELOG.md) | What shipped, by date |
 
