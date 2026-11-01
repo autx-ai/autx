@@ -9,14 +9,14 @@ Here, AUTX means AUTX DAO LLC, the Wyoming company at autx.ai. It is not related
 More customers ask AI assistants where to eat, shop, train or book. Those assistants can only recommend businesses they can read about. The AUTX AI Visibility Check shows a business what AI models say about it today, and where to put content about what it does best.
 
 - **Free check.** Three questions a business's customers ask, put to one OpenAI model with web search on, plus a name check. About a minute, with no signup and no email. [Check a business at autx.ai](https://autx.ai/).
-- **AUTX AI Visibility Report, $49, one time.** Every question in the business's question set, put to six AI models from OpenAI, Anthropic, Google, xAI and Perplexity. The PDF shows how often each model names, recommends and links the business, how often the competitors the owner lists come up, and which sites the models cite. It also includes a name check and a fix kit of draft files for the business's website.
+- **AUTX AI Visibility Report, $49, one time.** Every question in the business's question set, put to eight AI models from OpenAI, Anthropic, Google, Meta, xAI, DeepSeek and Perplexity. The PDF shows how often each model names, recommends and links the business, how often the competitors the owner lists come up, and which sites the models cite. It also includes a name check and a fix kit of draft files for the business's website.
 - **Sample report.** A real report for an Austin coffee shop, with its name, website and address hidden: [autx.ai/sample-report](https://autx.ai/sample-report/).
 
 ### How it measures
 
 - **Three results, counted apart.** Named you, recommended you and cited your website. Each count comes with the number of answers behind it, for example recommended in 2 of 13 answers and named in 5 of 13.
-- **Six models.** GPT-6.1 Sol and GPT-6 Luna on Azure OpenAI, Grok 4.7 on Azure AI Foundry, Claude and Perplexity Sonar answer with web search on. Gemini 3.8 Flash answers without web search, from what it learned in training.
-- **Developer APIs, not apps.** We ask each model through its developer API. The ChatGPT, Claude, Gemini, Grok and Perplexity apps can answer differently, and AUTX does not measure any app.
+- **Eight models.** Seven answer with web search on: GPT-6.1 Sol and GPT-6 Luna on Azure OpenAI, Grok 4.7, Muse Spark 1.3 and DeepSeek V4 Pro on Microsoft Foundry, plus Claude and Perplexity Sonar. Gemini 3.8 Flash answers without web search, from what it learned in training.
+- **Developer APIs, not apps.** We ask each model through its developer API. The ChatGPT, Claude, Gemini, Grok, Meta AI, DeepSeek and Perplexity apps can answer differently, and AUTX does not measure any app.
 - **Names have to match the business.** A mention counts only when something in the answer ties the name to the business. Name collisions stay out of the numbers. We learned this on ourselves: an early run counted AUTX as visible in a third of answers, and those answers described other things named AUTX.
 - **No ranking promise.** Answers change from run to run, so a report is a sample. Its score can move a few points between runs, and a grade near the edge of a band can change by a letter.
 

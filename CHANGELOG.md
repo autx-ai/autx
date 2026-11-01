@@ -2,6 +2,8 @@
 
 ## 1 November 2026
 
+- The full report asks eight AI models: Meta's Muse Spark 1.3 and DeepSeek V4 Pro join, both through Microsoft Foundry with web search on. Muse Spark 1.3 is in preview on Azure.
+- The sample report shows a new eight-model run on the same Austin coffee shop, with its identity hidden.
 - The full report opens with a two-page summary for the owner. Page 1 gives the grade, a one-sentence conclusion, the three measures and the first three things to do. Page 2 gives one row per AI company, the competitors the owner listed and the strength answers. Page 3 holds a checklist of every task. Then come each task's steps and the numbered evidence.
 - Report emails now attach a developer brief, a text file for whoever looks after the website or listings. It lists every task under the same task numbers as the PDF, with full steps for each website task.
 - The buyer's private order page shows a summary of the report and offers the developer brief as a download.

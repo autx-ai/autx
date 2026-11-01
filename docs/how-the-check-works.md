@@ -45,10 +45,10 @@ No ranking change by any date. Answers vary between runs. The report states what
 ## Models
 
 - Free check: GPT-6 Luna (Azure) with web search on. The first three questions of your set, one question for each strength you list, and the name check.
-- Full report: Claude, GPT-6.1 Sol (Azure), GPT-6 Luna (Azure), Grok 4.7 (Azure), Gemini 3.8 Flash and Perplexity Sonar, with web search on for every model except Gemini 3.8 Flash. Every question in your set, one question for each strength you list, and the name check. Each model answers each question once.
+- Full report: Claude, GPT-6.1 Sol (Azure), GPT-6 Luna (Azure), Grok 4.7 (Azure), Muse Spark 1.3 (Azure), DeepSeek V4 Pro (Azure), Gemini 3.8 Flash and Perplexity Sonar, with web search on for every model except Gemini 3.8 Flash. Every question in your set, one question for each strength you list, and the name check. Each model answers each question once.
 - Without web search: Gemini 3.8 Flash answers from what it learned in training, so it gives no sources and shows your website only if it learned the address.
 
-We ask each model through its developer API, with web search on for every model except Google's Gemini. The ChatGPT, Claude, Gemini, Grok and Perplexity apps can answer differently, and AUTX does not measure any app.
+We ask each model through its developer API, with web search on for every model except Google's Gemini. The ChatGPT, Claude, Gemini, Grok, Meta AI, DeepSeek and Perplexity apps can answer differently, and AUTX does not measure any app.
 
 ## Question sets
 
