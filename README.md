@@ -15,7 +15,7 @@ More customers ask AI assistants where to eat, shop, train or book. Those assist
 ### How it measures
 
 - **Three results, counted apart.** Named you, recommended you and cited your website. Each count comes with the number of answers behind it, for example recommended in 2 of 13 answers and named in 5 of 13.
-- **Eight models.** Seven answer with web search on: GPT-6.1 Sol and GPT-6 Luna on Azure OpenAI, Grok 4.7, Muse Spark 1.3 and DeepSeek V4 Pro on Microsoft Foundry, plus Claude and Perplexity Sonar. Gemini 3.8 Flash answers without web search, from what it learned in training.
+- **Eight models.** Seven answer with web search on: GPT-6.1 Sol, GPT-6 Luna, Grok 4.7, Muse Spark 1.3 and DeepSeek V4 Pro on Microsoft Foundry, plus Claude Sonnet 5.5 and Perplexity Sonar. Gemini 3.5 Flash-Lite, the newest version of the Flash-Lite model Google gives free Gemini app users, answers without web search, from what it learned in training.
 - **Developer APIs, not apps.** We ask each model through its developer API. The ChatGPT, Claude, Gemini, Grok, Meta AI, DeepSeek and Perplexity apps can answer differently, and AUTX does not measure any app.
 - **Names have to match the business.** A mention counts only when something in the answer ties the name to the business. Name collisions stay out of the numbers. We learned this on ourselves: an early run counted AUTX as visible in a third of answers, and those answers described other things named AUTX.
 - **No ranking promise.** Answers change from run to run, so a report is a sample. Its score can move a few points between runs, and a grade near the edge of a band can change by a letter.

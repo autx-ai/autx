@@ -1,6 +1,6 @@
 # How the AUTX AI Visibility Check works
 
-This page is a copy of [autx.ai/how-it-works](https://autx.ai/how-it-works/) as of 31 October 2026 (question set version 2026-10-31). The page on autx.ai is the current version.
+This page is a copy of [autx.ai/how-it-works](https://autx.ai/how-it-works/) as of 1 November 2026 (question set version 2026-10-31). The page on autx.ai is the current version.
 
 ## What we ask, which models we ask, and how we count
 
@@ -18,7 +18,7 @@ Every count comes with the number of answers behind it, for example recommended 
 
 ## The grade
 
-Your AI visibility grade: a letter from A to F and a score out of 100. Like a credit score, it sums up a lot of detail in one number. It is a snapshot of the answers on the day we ask. The score weighs the three results: named 50%, recommended 35% and cited your website 15%. We work out each model's share of its answers to the questions in your set that do not name you, average the models from one company so each company counts once, then average the companies. Gemini 3.8 Flash is asked without web search, so the grade leaves it out, but the report still shows its answers and counts.
+Your AI visibility grade: a letter from A to F and a score out of 100. Like a credit score, it sums up a lot of detail in one number. It is a snapshot of the answers on the day we ask. The score weighs the three results: named 50%, recommended 35% and cited your website 15%. We work out each model's share of its answers to the questions in your set that do not name you, average the models from one company so each company counts once, then average the companies. Gemini 3.5 Flash-Lite is asked without web search, so the grade leaves it out, but the report still shows its answers and counts.
 
 A is 80 or more, B is 60 or more, C is 40 or more, D is 20 or more, and F is below 20. When you give no website, the website result drops out, and named and recommended make up the whole score: 59 percent and 41 percent. A report gets no grade when it is incomplete, or when a model with web search answered none of the questions in your set that do not name you. The free check has no grade, because answers from one model are too few to grade.
 
@@ -45,8 +45,8 @@ No ranking change by any date. Answers vary between runs. The report states what
 ## Models
 
 - Free check: GPT-6 Luna (Azure) with web search on. The first three questions of your set, one question for each strength you list, and the name check.
-- Full report: Claude, GPT-6.1 Sol (Azure), GPT-6 Luna (Azure), Grok 4.7 (Azure), Muse Spark 1.3 (Azure), DeepSeek V4 Pro (Azure), Gemini 3.8 Flash and Perplexity Sonar, with web search on for every model except Gemini 3.8 Flash. Every question in your set, one question for each strength you list, and the name check. Each model answers each question once.
-- Without web search: Gemini 3.8 Flash answers from what it learned in training, so it gives no sources and shows your website only if it learned the address.
+- Full report: Claude Sonnet 5.5, GPT-6.1 Sol (Azure), GPT-6 Luna (Azure), Grok 4.7 (Azure), Muse Spark 1.3 (Azure), DeepSeek V4 Pro (Azure), Gemini 3.5 Flash-Lite and Perplexity Sonar, with web search on for every model except Gemini 3.5 Flash-Lite. Every question in your set, one question for each strength you list, and the name check. Each model answers each question once.
+- Without web search: Gemini 3.5 Flash-Lite answers from what it learned in training, so it gives no sources and shows your website only if it learned the address.
 
 We ask each model through its developer API, with web search on for every model except Google's Gemini. The ChatGPT, Claude, Gemini, Grok, Meta AI, DeepSeek and Perplexity apps can answer differently, and AUTX does not measure any app.
 

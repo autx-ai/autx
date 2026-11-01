@@ -3,6 +3,8 @@
 ## 1 November 2026
 
 - The full report asks eight AI models: Meta's Muse Spark 1.3 and DeepSeek V4 Pro join, both through Microsoft Foundry with web search on. Muse Spark 1.3 is in preview on Azure.
+- The full report uses each AI company's current model. Claude Sonnet 5.5 replaces Claude Sonnet 5. Gemini 3.5 Flash-Lite, the newest version of the Flash-Lite model Google gives free Gemini app users, replaces Gemini 3.8 Flash and still answers without web search.
+- GPT-6.1 Sol and GPT-6 Luna move to Microsoft Foundry, where Grok 4.7, Muse Spark 1.3 and DeepSeek V4 Pro already run.
 - The sample report shows a new eight-model run on the same Austin coffee shop, with its identity hidden.
 - The full report opens with a two-page summary for the owner. Page 1 gives the grade, a one-sentence conclusion, the three measures and the first three things to do. Page 2 gives one row per AI company, the competitors the owner listed and the strength answers. Page 3 holds a checklist of every task. Then come each task's steps and the numbered evidence.
 - Report emails now attach a developer brief, a text file for whoever looks after the website or listings. It lists every task under the same task numbers as the PDF, with full steps for each website task.
