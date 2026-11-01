@@ -12,19 +12,19 @@ A mention alone can flatter you, because a place in a list of rivals is not a re
 
 - **Named.** The answer names your business, and something in it ties the name to you.
 - **Recommended.** The answer tells the customer to go to you. This result sends people your way, and it is rarer.
-- **Linked.** Your website shows up in the answer or its sources.
+- **Cited your website.** Your website shows up in the answer or its sources.
 
 Every count comes with the number of answers behind it, for example recommended in 2 of 13 answers and named in 5 of 13. The gap between named and recommended tends to be the finding.
 
 ## The grade
 
-Your AI visibility grade: a letter from A to F and a score out of 100. Like a credit score, it sums up a lot of detail in one number. It is a snapshot of the answers on the day we ask. The score weighs the three results: named 50%, recommended 35% and linked 15%. We work out each model's share of its answers to the questions in your set that do not name you, average the models from one company so each company counts once, then average the companies. Gemini 3.8 Flash is asked without web search, so the grade leaves it out, but the report still shows its answers and counts.
+Your AI visibility grade: a letter from A to F and a score out of 100. Like a credit score, it sums up a lot of detail in one number. It is a snapshot of the answers on the day we ask. The score weighs the three results: named 50%, recommended 35% and cited your website 15%. We work out each model's share of its answers to the questions in your set that do not name you, average the models from one company so each company counts once, then average the companies. Gemini 3.8 Flash is asked without web search, so the grade leaves it out, but the report still shows its answers and counts.
 
-A is 80 or more, B is 60 or more, C is 40 or more, D is 20 or more, and F is below 20. When you give no website, the linked part drops out, and named and recommended make up the whole score: 59 percent and 41 percent. A report gets no grade when it is incomplete, or when a model with web search answered none of the questions in your set that do not name you. The free check has no grade, because answers from one model are too few to grade.
+A is 80 or more, B is 60 or more, C is 40 or more, D is 20 or more, and F is below 20. When you give no website, the website result drops out, and named and recommended make up the whole score: 59 percent and 41 percent. A report gets no grade when it is incomplete, or when a model with web search answered none of the questions in your set that do not name you. The free check has no grade, because answers from one model are too few to grade.
 
 ## Your strengths
 
-You can list up to three things you want to be known for, such as outdoor seating or vegan pastries. For each one we ask a question that does not name you, such as "Which coffee shop in Austin, TX is best for outdoor seating?" We count named, recommended and linked by the same rules as the other questions. Google says the top restaurant details people ask AI Mode about in follow-up questions include outdoor seating, vegan or vegetarian options, live music and whether dogs are welcome. ([Google, How people are using AI Mode in the U.S.](https://services.google.com/fh/files/blogs/ai_mode_us_insights.pdf), page 24.) We do not test Google AI Mode itself.
+You can list up to three things you want to be known for, such as outdoor seating or vegan pastries. For each one we ask a question that does not name you, such as "Which coffee shop in Austin, TX is best for outdoor seating?" We count all three results by the same rules we use for the other questions. Google says the top restaurant details people ask AI Mode about in follow-up questions include outdoor seating, vegan or vegetarian options, live music and whether dogs are welcome. ([Google, How people are using AI Mode in the U.S.](https://services.google.com/fh/files/blogs/ai_mode_us_insights.pdf), page 24.) We do not test Google AI Mode itself.
 
 Your strengths are your own picks, so their answers get their own section and stay out of the grade and the headline figures. The sites they cite count toward the sites to pursue.
 
@@ -46,7 +46,7 @@ No ranking change by any date. Answers vary between runs. The report states what
 
 - Free check: GPT-6 Luna (Azure) with web search on. The first three questions of your set, one question for each strength you list, and the name check.
 - Full report: Claude, GPT-6.1 Sol (Azure), GPT-6 Luna (Azure), Grok 4.7 (Azure), Gemini 3.8 Flash and Perplexity Sonar, with web search on for every model except Gemini 3.8 Flash. Every question in your set, one question for each strength you list, and the name check. Each model answers each question once.
-- Without web search: Gemini 3.8 Flash answers from what it learned in training, so it cites no sites and links your website only if it learned the address.
+- Without web search: Gemini 3.8 Flash answers from what it learned in training, so it gives no sources and shows your website only if it learned the address.
 
 We ask each model through its developer API, with web search on for every model except Google's Gemini. The ChatGPT, Claude, Gemini, Grok and Perplexity apps can answer differently, and AUTX does not measure any app.
 
@@ -244,9 +244,9 @@ An answer to a question that does not name you must use your name as a name. A n
 
 An answer recommends you when it tells the customer to go to you. A word such as "try", "use", "visit", "head to", "consider", "check out" or "go with" has to open a clause and come before your name in the same sentence, and "I recommend", "we suggest" and "your best bet is" count too. We reject the sentence when "instead of", "alternatives to", "rather than", "complaints about" or similar words sit between the verb and your name, or when "not", "never", "avoid" or "don't" comes right before the verb. A recommendation counts only when the same answer also names you under the rule above.
 
-### Linked
+### Cited your website
 
-An answer links you when your domain, or a subdomain of it, appears in a recommendation link or a cited source. When you give no domain, we leave the linked result out and say so.
+An answer cites your website when your domain, or a subdomain of it, appears in the answer or in its sources. When you give no domain, we leave this result out and say so.
 
 ### Name collisions
 
@@ -254,7 +254,7 @@ When the model says your name points to more than one thing and the answer does 
 
 ### Headline figures
 
-Recommended, named and linked counts use only the questions that do not name you, so a question that already names you cannot raise your numbers. Questions about you by name and the name check feed the name check section. Every figure leaves out failed calls, and each count comes with the number of answers behind it. Questions that ask what to avoid or what warning signs to look for sit outside every figure, because a mention there is no win. A report quotes each answer to them that names you, in its own section. Strength questions do not name you either, but they sit outside the headline figures and the grade, in their own section.
+All three headline figures use only the questions that do not name you, so a question that already names you cannot raise your numbers. Questions about you by name and the name check feed the name check section. Every figure leaves out failed calls, and each count comes with the number of answers behind it. Questions that ask what to avoid or what warning signs to look for sit outside every figure, because a mention there is no win. A report quotes each answer to them that names you, in its own section. Strength questions do not name you either, but they sit outside the headline figures and the grade, in their own section.
 
 ### Sites to pursue
 

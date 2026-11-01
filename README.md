@@ -14,7 +14,7 @@ More customers ask AI assistants where to eat, shop, train or book. Those assist
 
 ### How it measures
 
-- **Three results, counted apart.** Named, recommended and linked. Each count comes with the number of answers behind it, for example recommended in 2 of 13 answers and named in 5 of 13.
+- **Three results, counted apart.** Named you, recommended you and cited your website. Each count comes with the number of answers behind it, for example recommended in 2 of 13 answers and named in 5 of 13.
 - **Six models.** GPT-6.1 Sol and GPT-6 Luna on Azure OpenAI, Grok 4.7 on Azure AI Foundry, Claude and Perplexity Sonar answer with web search on. Gemini 3.8 Flash answers without web search, from what it learned in training.
 - **Developer APIs, not apps.** We ask each model through its developer API. The ChatGPT, Claude, Gemini, Grok and Perplexity apps can answer differently, and AUTX does not measure any app.
 - **Names have to match the business.** A mention counts only when something in the answer ties the name to the business. Name collisions stay out of the numbers. We learned this on ourselves: an early run counted AUTX as visible in a third of answers, and those answers described other things named AUTX.

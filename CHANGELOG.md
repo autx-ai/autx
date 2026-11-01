@@ -6,6 +6,8 @@
 - Report emails now attach a developer brief, a text file for whoever looks after the website or listings. It lists every task under the same task numbers as the PDF, with full steps for each website task.
 - The buyer's private order page shows a summary of the report and offers the developer brief as a download.
 - The site's own script counts page views and clicks as daily totals, with no cookie and no ID. The [privacy policy](https://autx.ai/privacy/) describes these totals and now also names Cloudflare Web Analytics, which was already running.
+- How it works, the free check and the rest of the site now call the third result "Cited your website", as the report does, in place of "Linked".
+- Fix: an answer that writes the business's web address with www or another subdomain, such as www.example.com, now counts as citing its website. Before, only the bare domain counted in the answer text. Subdomains already counted in cited sources.
 
 ## 31 October 2026
 
